@@ -1,4 +1,4 @@
-# [mmmaxwwwell/space-engineers-dedicated-docker-linux](https://github.com/mmmaxwwwell/space-engineers-dedicated-docker-linux)
+
 
 All of the space engineers dedicated server on wine containers I found wouldn't build, and I embarked on a journey to create my own.
 
@@ -13,6 +13,7 @@ All of the space engineers dedicated server on wine containers I found wouldn't 
 * Reduced container size (~4gb decompressed).
 
 Thank you to:
+* Forked from [mmmaxwwwell/space-engineers-dedicated-docker-linux](https://github.com/mmmaxwwwell/space-engineers-dedicated-docker-linux)
 * [7thCore](https://github.com/7thCore) for [7thCore/sesrv-script](https://github.com/7thCore/sesrv-script)
 * [Devidian](https://github.com/Devidian) for advancing the docker implementation to a working state!
 * @Inflex for 
