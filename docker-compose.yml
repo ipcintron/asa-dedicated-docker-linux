@@ -1,8 +1,8 @@
 version: '3'
 
 services:
-  se-server:
-    image: mmmaxwwwell/asa-dedicated-docker-linux:latest
+  asa-server:
+    image: ipcintron/asa-dedicated-docker-linux:latest
     container_name: asa-dedicated-docker-linux
     restart: unless-stopped
     volumes:
