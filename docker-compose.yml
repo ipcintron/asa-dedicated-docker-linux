@@ -6,7 +6,9 @@ services:
     container_name: asa-dedicated-docker-linux
     restart: unless-stopped
     volumes:
-      - ./appdata/asa/bins/asa:/appdata/asa/asa
-      - ./appdata/asa/bins/steamcmd:/home/wine/.steam
+      - /appdata/asa/asa:/appdata/asa/asa
+      - /appdata/asa/bins/steamcmd:/home/wine/.steam
+      #- ./appdata/asa/bins/asa:/appdata/asa/asa
+      #- ./appdata/asa/bins/steamcmd:/home/wine/.steam
     ports:
      - "27016:27016/udp"
