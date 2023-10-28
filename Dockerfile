@@ -8,13 +8,11 @@ RUN \
 WORKDIR /scripts
 RUN runuser wine bash -c ./install-winetricks
 RUN \
-  mkdir -p /appdata/space-engineers/bin &&\
-  mkdir -p /appdata/space-engineers/config
+  mkdir -p /appdata/asa/bin &&\
+  mkdir -p /appdata/asa/config
 COPY entrypoint.bash /entrypoint.bash
-COPY entrypoint-space_engineers.bash /entrypoint-space_engineers.bash
-RUN chmod +x /entrypoint.bash && chmod +x /entrypoint-space_engineers.bash
+COPY entrypoint-asa.bash /entrypoint-asa.bash
+RUN chmod +x /entrypoint.bash && chmod +x /entrypoint-asa.bash
 
 CMD /entrypoint.bash
-
-  
 
